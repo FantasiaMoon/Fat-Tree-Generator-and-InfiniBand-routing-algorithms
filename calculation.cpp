@@ -24,20 +24,12 @@ Calculation::Calculation() {}
 
 Calculation::~Calculation() {}
 
-/**
- * Constructeur qui charge les informations 
- * de la topologie et table de routage en mémoire.
- */
 Calculation::Calculation(char* topoFile, char* routeFile) 
 {
 	topologyTable.loadData(topoFile);
 	routingTable.loadData(routeFile);
 }
 
-/**
- * Méthode qui calcule le nombre de sauts 
- * d'un noeud source jusqu'au noeud destination.
- */
 int Calculation::getHopCount(int fromId, int toId)
 {
 	int count = 0;
@@ -93,9 +85,6 @@ int Calculation::getHopCount(int fromId, int toId)
 	return count;
 }
 
-/**
- * Méthode qui implémente la métrique Minhop.
- */
 int Calculation::calculate() 
 {
 	int minHop = 0xffff;
@@ -115,10 +104,6 @@ int Calculation::calculate()
 	return minHop;
 }
 
-/**
- * Méthode qui calcule la charge d'un noeud
- * source jusqu'au noeud destination.
- */
 int Calculation::getRoute(int fromId, int toId)
 {
 	struct hostNode * fromHost = topologyTable.getHostById(fromId);
@@ -175,9 +160,6 @@ int Calculation::getRoute(int fromId, int toId)
 	return 0;
 }
 
-/**
- * Méthode qui implémente la métrique Route balancing.
- */
 int Calculation::balance() 
 {
 	int balance = 0xffff; 
