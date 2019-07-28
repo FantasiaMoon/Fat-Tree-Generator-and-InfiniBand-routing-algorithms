@@ -2,7 +2,7 @@
  * Description: This class calculates the metrics for a particular topology.
  *
  * @Usage   ./main [topoFile] [routeFile]
- * @file    calculation.cpp
+ * @file    calculation.h
  * @version 1.0
  * @author  Badr TOUNZI <contact@boostio.fr>
  */
