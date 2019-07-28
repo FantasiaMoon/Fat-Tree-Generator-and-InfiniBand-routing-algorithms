@@ -6,7 +6,7 @@ int main(int argc, char** argv){
 		return 0;
 	}
 	int k=atoi(argv[1]);		// number of ports per switch
-	int num_pod = k;			// number of pod
+	int num_pod = k;		// number of pod
 	int num_host = (k/2);		// number of hosts under a switch
 	int num_edge = (k/2);		// number of edge switch in a pod
 	int num_bridge = num_edge;	// number of bridge in a pod
@@ -70,7 +70,7 @@ int main(int argc, char** argv){
 			}
 		}
 	}
-	printf("fat tree topology file generated\n");
+	printf("Fat Tree topology file generated\n");
 	fclose(fp);
 	return 0;
 }
