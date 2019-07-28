@@ -1,3 +1,12 @@
+/* 
+ * Description: This class calculates the metrics for a particular topology.
+ *
+ * @Usage   ./main [topoFile] [routeFile]
+ * @file    calculation.cpp
+ * @version 1.0
+ * @author  Badr TOUNZI <contact@boostio.fr>
+ */
+
 #pragma once
 
 #include <iostream>
@@ -25,10 +34,10 @@ class Calculation
 
 		void printTopology() { topologyTable.printData(); };
 		void printRouting() { routingTable.printData(); };
-		int calculate();
-		int getHopCount(int from, int to);
-		int balance();
-		int getRoute(int from, int to);
+		int  calculate();
+		int  getHopCount(int from, int to);
+		int  balance();
+		int  getRoute(int from, int to);
 		
 	private:
 		Topology topologyTable;
