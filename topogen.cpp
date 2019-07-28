@@ -70,7 +70,7 @@ int main(int argc, char** argv){
 			}
 		}
 	}
-	printf("fat tree topology file generated\n");
+	printf("Fat Tree topology file generated\n");
 	fclose(fp);
 	return 0;
 }
