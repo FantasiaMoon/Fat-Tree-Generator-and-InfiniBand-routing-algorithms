@@ -2,7 +2,7 @@
  * Description: Main function to run the program
  *
  * @Usage   ./main [topoFile] [routeFile]
- * @file    calculation.cpp
+ * @file    main.cpp
  * @version 1.0
  * @author  Badr TOUNZI <contact@boostio.fr>
  */
