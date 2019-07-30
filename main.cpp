@@ -1,5 +1,5 @@
 /* 
- * Description: This class calculates the metrics for a particular topology.
+ * Description: Main function to run the program
  *
  * @Usage   ./main [topoFile] [routeFile]
  * @file    calculation.cpp
